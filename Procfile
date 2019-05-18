@@ -1,1 +1,0 @@
-worker: python wyr.py
