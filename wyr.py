@@ -166,6 +166,7 @@ async def on_message(message):
             embed.add_field(name = f"{prefixs[str(message.guild.id)]}prefix <new perfix>", value = "Change the prefix of the bot for this server. Replace <new prefix> with the new prefix. EX: `.prefix ,`.")
             embed.add_field(name = f"Upvote the bot.", value = "If you want to help me out, then you can upvote the bot here: https://discordbots.org/bot/572255256927535124/vote")
             embed.add_field(name = f"Source code.", value = "you can find the source code here: https://github.com/glaidtors/Would-You-Rather-Discord-Bot")
+            embed.add_field(name = f"Feedback & support.", value = "You can DM me feedback or report bugs @glaidtors#6988, and if you want to support me, you can donate at https://paypal.me/glaidtors412")
             await message.channel.send(content = None, embed = embed)
 
     except KeyError:
