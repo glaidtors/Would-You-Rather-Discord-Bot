@@ -93,6 +93,8 @@ async def on_ready():
 #when someone joins in, make a prefix for them
 async def on_join(guild):
     new_prefix(guild)
+    channel = client.get_user(306934440897282050)
+    await channel.send(f'I have just join {guild.name} and there are {guild.member_count} people there.')
 
 @client.event
 async def on_message(message):
